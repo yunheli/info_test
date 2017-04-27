@@ -28,7 +28,9 @@ build:
         - script:
             name: create table
             code: | 
+                echo "========"
                 ls /pipeline/cache
+                echo "========"
         - bundle-install
         - script:
             name: create table
