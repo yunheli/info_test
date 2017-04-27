@@ -28,6 +28,7 @@ build:
         - script:
             name: env
             code: | 
+                mysql -h $MYSQL_PORT_3306_TCP_ADDR -uroot
                 env
         - bundle-install
         - script:
