@@ -25,6 +25,10 @@ build:
     # Read more about steps on our dev center:
     # http://devcenter.wercker.com/docs/steps/index.html
     steps:
+        - script:
+            name: create table
+            code: | 
+                ls /pipeline/cache
         - bundle-install
         - script:
             name: create table
