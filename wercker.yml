@@ -35,6 +35,10 @@ build:
             code: | 
                 bundle exec rake db:create      
         - script:
+            name: create migrate
+            code: | 
+                bundle exec rake db:migrate      
+        - script:
             name: rake test
             code: | 
                 bundle exec rake test
