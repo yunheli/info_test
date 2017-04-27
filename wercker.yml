@@ -29,7 +29,7 @@ build:
             name: create table
             code: | 
                 echo "========"
-                ls -l /pipeline/cache/bundle-install
+                ls  /pipeline/cache
                 echo "========"
         - bundle-install
         - script:
