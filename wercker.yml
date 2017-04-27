@@ -33,7 +33,7 @@ build:
         - script:
             name: create table
             code: | 
-                bundle exec rake db:migrate      
+                bundle exec rake db:create      
         - script:
             name: rake test
             code: | 
