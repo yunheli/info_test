@@ -12,7 +12,7 @@ services:
     - id: mysql
       env:
         MYSQL_ROOT_USERNAME: root
-        MYSQL_ROOT_PASSWORD: 
+        MYSQL_ALLOW_EMPTY_PASSWORD: true 
         MYSQL_DATABASE: info_test_development
     # - mongo
     # http://devcenter.wercker.com/docs/services/mongodb.html
