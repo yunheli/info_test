@@ -26,16 +26,14 @@ build:
     # http://devcenter.wercker.com/docs/steps/index.html
     steps:
         - script:
-            name: create table
+            name: env
             code: | 
-                echo "========1"
-                ls  /pipeline/cache
-                echo "========1"
+                env
         - bundle-install
         - script:
             name: create table
             code: | 
-                rake db:migrate      
+                bundle exec rake db:migrate      
         - script:
             name: rake test
             code: | 
